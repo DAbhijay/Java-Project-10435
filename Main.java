@@ -5,5 +5,9 @@ public class Main {
         System.out.println("Room Type   : " + r.getRoomType());
         System.out.println("Price/Day   : " + r.getPricePerDay());
         System.out.println("Available   : " + r.isAvailable());
+
+        r.displayStatus();
+        r.setAvailable(false);
+        r.displayStatus();
     }
 }

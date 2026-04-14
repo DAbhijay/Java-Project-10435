@@ -16,4 +16,13 @@ public class Room {
     public double getPricePerDay()   { return pricePerDay; }
     public boolean isAvailable()     { return isAvailable; }
     public void setAvailable(boolean available) { isAvailable = available; }
+
+    
+    public void displayStatus() {
+        if (isAvailable) {
+            System.out.println("Room " + roomNumber + " is available.");
+        } else {
+            System.out.println("Room " + roomNumber + " is not available.");
+        }
+    }
 }
